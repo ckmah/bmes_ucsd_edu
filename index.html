@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- media query -->
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/content.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="scripts/animations.js"></script>
+        <script src="scripts/events.js"></script>
+        <script src="scripts/home.js"></script>
+        <script src="scripts/officers.js"></script>
+        <script src="scripts/contact.js"></script>
+        <script src="scripts/myutil.js"></script>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-55543868-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul><li id="tohome">HOME</li><li id="toabout">ABOUT</li><li id="toevents">OPPORTUNITIES</li><li id="tocalendar">CALENDAR</li><li id="toofficers">OFFICERS</li><!--
+            --><li id="tocontact">CONTACT</li><!--
+        --></ul>
+    </nav>
+    <ul class="social_media"><!--
+        --><div class="testimonials" id="test1">Lab Expo Committee | Mondays @ 7-8PM</div><!--
+        --><div class="testimonials" id="test2">Research and Development | Tuesdays @ 1-2PM</div><!--
+        --><div class="testimonials" id="test3">Social Committee | Wednesdays @ 7-8PM</div><!--
+        --><div class="testimonials" id="test4">Outreach Committee | Thursdays @ 5-6PM</div><!--
+        --><div class="testimonials" id="test5">Finance Committee | Wednesdays @ 7:30-8:30PM</div><!--
+        --><div class="testimonials" id="test6">Project Team | Wednesdays @ 8-9PM</div><!--
+        --><div class="testimonials" id="test7">BE Day Committee | Wednesdays @ 3-4PM</div><!--
+        --><!--
+        --><li><img href="http://www.facebook.com/bmes.ucsd/" src="assets/fb.png" alt="f"></li><!--
+        --><li><img href="http://www.twitter.com/bmesUCSD/" src="assets/tw.png" alt="t"></li><!--
+        --><li><img href="https://www.youtube.com/user/ucsdbmes" src="assets/yt.png" alt="y"></li><!--
+    --></ul>
+    <div id="bg"></div>
+    <div id="hexagons"></div>
+    <div id="cover"></div>
+    <section id="home" data-index="0">
+        <img src="assets/bmes_logo.png" alt="BMES logo">&nbsp;&nbsp;&nbsp;
+        <div><div id="bmes">Biomedical Engineering Society</div><div id="ucsd">University of California, San Diego</div><br></div>
+    </section>
+    <section id="about" data-index="1">
+        <iframe src="http://www.youtube.com/embed/9v1JmsR5tlM" frameborder="0" allowfullscreen></iframe>
+        <div id="video_caption">UCSD Winning Entree to NAE Video Contest</div>
+        <p id="description">The Biomedical Engineering Society (BMES) at the University of California, San Diego (UCSD) is dedicated to enriching the undergraduate experience for the Department of Bioengineering and those interested in Biomedical Engineering by fostering personal growth and professional development. We encourage undergraduates to get involved with their education and start making a difference today. Whether it's the fun socials with our Mentor-Mentee committee, planning our big pro-dev events with BE Day/Lab Expo, or reaching out and teaching with Outreach, come be a part of BMES at UCSD!</p>
+    </section>
+    <section id="events" data-index="2">
+        <!--     <div id="timeline">
+            <div id="bar"></div>
+            <div id="nodewrap">
+                <div class="node" id="node1"></div>
+                <div class="node" id="node2"></div>
+                <div class="node" id="node3"></div>
+                <div class="node" id="node4"></div>
+            </div>
+        </div>
+        <div class="event_page" id="page1">
+            <div class="back"><div>+</div></div>
+            <div class="event_gallery">
+                <img class="gallery_pic" src="assets/beDay1.jpg"></img>
+                <div class="gallery_left gallery_arrow"></div>
+                <div class="gallery_right gallery_arrow"></div>
+                <div class="gallery_slides">
+                    <img src="assets/beDay1.jpg"></img>
+                    <img src="assets/beDay2.jpg"></img>
+                </div>
+            </div>
+            <div class="event_text"><h2>Bioengineering Day</h2><p> Bioengineering day is a unique forum for networking between our industrial partners and the bioengineering community at UC San Diego. The undergraduate and graduate research symposia celebrate the accomplishments of our students and provide opportunities for collaboration between industry, alumni, faculty, and students. BE Day features a keynote speaker, a variety of graduate research presentations, a poster expo, an industry panel discussion, and a networking reception.</p>
+            </div>
+        </div>
+        <div class="event_page" id="page2"></div>
+        <div class="event_page" id="page3"></div>
+        <div class="event_page" id="page4"></div> -->
+        <div id="event_tab_module">
+            <div id="event_tabs">
+                <div id="tab1" class="tab">
+                    <h2>Bioengineering Day</h2>
+                    <p> Bioengineering day is a unique forum for networking between our industrial partners and the bioengineering community at UC San Diego. The undergraduate and graduate research symposia celebrate the accomplishments of our students and provide opportunities for collaboration between industry, alumni, faculty, and students. BE Day features a keynote speaker, a variety of graduate research presentations, a poster expo, an industry panel discussion, and a networking reception.</p>
+                </div>
+                <div id="tab2" class="tab">
+                    <h2>Lab Expo</h2>
+                    <p>This event is designed to be similar to a career fair, except that the representatives tabling at the event range from undergraduate to graduate students and professors from labs on campus. This event provides undergraduate students a chance to not only see some of the research taking place across campus, but also get involved by joining a laboratory or learning more about on-going projects. This event is to act as a stepping stone into the world of research for students who are interested in research and academia. With this event, students can be introduced to the kinds of research each lab does, and identify areas of research they would like to learn more about.</p>
+                </div>
+                <div id="tab3" class="tab">
+                    <!-- <h2>Industry Tours</h2>
+                    <p>In 2013, we held a tour of Illumina Inc. The attendees were able to attend a presentation on Illumina’s history, technology, company culture, goals and products. Afterwards, they were able to take a tour of the laboratories and the Illumina Headquarters. We will be offering more opportunities for industry tours.</p> -->
+                    <h2>Project Team</h2>
+                    <p>Project Team was created as a method for teams of undergraduate students to pursue their own research interests under the guidance of a professor. Participants in Project Team will design and execute projects with the intention of creating or improving technology for the medical industry while entering these projects into competitions such as BMEIdea or BMEStart.</p>
+                </div>
+                <div id="tab4" class="tab">
+                    <!-- <h2>Panels</h2>
+                    <p>Graduate student members from UCSD’s Department of Bioengineering help answer undergraduate student’s questions about whether to pursue graduate school or industry post-graduation.</p> -->
+                    <h2>BE Med</h2>
+                    <p>BE Med is an upcoming event for this coming school year. For this event, BMES will be attempting to bridge the gap between the research and practical sides of medicine by introducing workshops, lectures, and demos from practitioners and researchers in the field.</p>
+                </div>
+                <div id="tab5" class="tab">
+                    <h2>BE Inspired</h2>
+                    <p>BE Inspired invites professors and graduate students to come and present a topic from their research that they themselves feel especially passionate about. The event is kept small, maxing out at around twenty-five people, to foster a more intimate connection between the presenter and the students outside of the classroom setting. The purpose behind the event is to give bioengineering students the opportunity to learn about subjects outside of the major that, due to our heavy course load, we may not be able to take on during our undergraduate career, allowing the students the opportunity for them to choose what they get out of higher education and learning.</p>
+                </div>
+                <div id="tab6" class="tab">
+                    <h2>Socials</h2>
+                    <p>Social activities were designed specifically to bring mentors and mentees together in an effort to create a strong bond between them. However, all members are invited to attend. The social activities are designed to separate students from school so that they can bond over more than just schoolwork. These activities were also designed so that members are given the opportunity to learn a new skill and have fun doing so.</p>
+                </div>
+                <div id="tab7" class="tab">
+                    <h2>Outreach</h2>
+                    <p>Outreach undergraduate volunteers focus on promoting STEM education (Science Technology Engineering and Mathematics) through local high school visits. Students are encouraged to think about simple science based solutions to real world problems and are exposed to current technological developments. They also learn about opportunities for undergraduate research, internships, and types of coursework they would take as a bioengineering major. In addition, Outreach also participates in the San Diego Festival for Science and Engineering (SDFSE) in order to provide people of all ages--from K-12 students to senior citizens--modern applications of bioengineering in an easy to understand fashion.</p>
+                </div>
+                <div id="tab8" class="tab">
+                    <h2>Mentor-Mentee Program</h2>
+                    <p>The purpose of the Mentor-Mentee program is to promote a sense of community in the Bioengineering Department for both underclassmen and upperclassmen.  For many new freshman or transfer students, the new UCSD college environment and the Bioengineering department can be overwhelming.  The BMES Mentor-Mentee Program serves to facilitate this new adjustment by making new friends who share the same academic interests.  Furthermore, mentors provide these new Bioengineering students with academic and social advice to help guide them in the right direction as they embark on their undergraduate studies.</p>
+                </div>
+            </div>
+            <ul id="eventNavBar">
+                <li class="tabButton" value="1" onclick="showTab('tab', this)">BE Day</li><!--
+                --><li class="tabButton" value="2" onclick="showTab('tab', this)">Lab Expo</li><!--
+                --><li class="tabButton" value="3" onclick="showTab('tab', this)">Project Team</li><!--
+                --><li class="tabButton" value="4" onclick="showTab('tab', this)">BE Med</li><!--
+                --><li class="tabButton" value="5" onclick="showTab('tab', this)">BE Inspired</li><!--
+                --><li class="tabButton" value="6" onclick="showTab('tab', this)">Socials</li><!--
+                --><li class="tabButton" value="7" onclick="showTab('tab', this)">Outreach</li><!--
+                --><li class="tabButton" value="8" onclick="showTab('tab', this)">Mentor-Mentee Program</li>
+            </ul>
+        </div>
+    </section>
+    <section id="calendar" data-index="4">
+        <iframe id="cal" src="https://www.google.com/calendar/embed?title=Calendar&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23eeeeee&amp;src=g644n23ht1qjhsif7t67kqjcv4%40group.calendar.google.com&amp;color=%235A6986&amp;ctz=America%2FLos_Angeles" style=" border-width:0" frameborder="0" scroll="no"></iframe>
+    </section>
+    <section id="officers" data-index="5">
+        <ul id="officer_grid"><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/teryn.jpg" alt="teryn"></div><div class="officer_label"><p class="officer_name">Teryn Johnson<br>President</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/yajur.jpg" alt="yajur"></div><div class="officer_label"><p class="officer_name">Yajur Maker<br>VP Internal</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/ben.jpg" alt="ben"></div><div class="officer_label"><p class="officer_name">Ben Yang<br>VP External</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/jenny.jpg" alt="jenny"></div><div class="officer_label"><p class="officer_name">Jenny Pan<br>VP Finance</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/swetha.jpg" alt="swetha"></div><div class="officer_label"><p class="officer_name">Swetha Prabhakaran<br>BE Day</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/jessica.jpg" alt="jessica"></div><div class="officer_label"><p class="officer_name">Jessica Lam<br>BE Day</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/vikash.jpg" alt="vikash"></div><div class="officer_label"><p class="officer_name">Vikash Morar<br>Lab Expo</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/michelle.jpg" alt="michelle"></div><div class="officer_label"><p class="officer_name">Michelle Ragsac<br>Lab Expo</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/sumit.jpg" alt="sumit"></div><div class="officer_label"><p class="officer_name">Sumit Dan<br>Project Team</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/clarence.jpg" alt="clarence"></div><div class="officer_label"><p class="officer_name">Clarence Mah<br>Project Team</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/julia.jpg" alt="julia"></div><div class="officer_label"><p class="officer_name">Julia Wong<br>Social</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/courtney.jpg" alt="courtney"></div><div class="officer_label"><p class="officer_name">Courtney Dreyer<br>Social</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/annelise.jpg" alt="annelise"></div><div class="officer_label"><p class="officer_name">Annelise Miller<br>Outreach</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/anurag.jpg" alt="anurag"></div><div class="officer_label"><p class="officer_name">Anurag Coramutla<br>Outreach</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/neil.jpg" alt="neil"></div><div class="officer_label"><p class="officer_name">Neil Jethani<br>R & D</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/logo_icon.jpg" alt="freshmanRep"></div><div class="officer_label"><p class="officer_name">TBA<br>Freshman Rep</p><p class="officer_more">more...</p></div></li><!--
+            --><li class="officer"><div class="mugshot"><img src="assets/logo_icon.jpg" alt="transferRep"></div><div class="officer_label"><p class="officer_name">TBA<br>Transfer Rep</p><p class="officer_more">more...</p></div></li><!--
+        --></ul>
+        <ul id="officer_bio"><!--
+            --><li class="bio_container"><img src="assets/teryn.jpg" alt=""><span class="name">Teryn Johnson</span><span class="position">President<br>t8johnso@ucsd.edu</span><p>I am President,<br>
+                For four years I have been here:<br>
+            Hobbies now only dreams.</p></li><!--
+            --><li class="bio_container"><img src="assets/yajur.jpg" alt=""><span class="name">Yajur Maker</span><span class="position">VP Internal<br>ymaker@ucsd.edu</span><p>Let's get the major stuff out of the way: 2nd year Bioengineering: Biosystems from Warren. Now for the juicy details. I love nature and the beach, improv comedy, and the Lakers (don't kill me). But all in all, I have slowly evolved a love for this campus, and a love for BioE. Come talk to me and we can splurge to world about wireless gizmoz and 21st century bionics cause if we won't, then who will?</p></li><!--
+            --><li class="bio_container"><img src="assets/ben.jpg" alt=""><span class="name">Ben Yang</span><span class="position">VP External<br>benyang@ucsd.edu</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
+            --><li class="bio_container"><img src="assets/jenny.jpg" alt=""><span class="name">Jenny Pan</span><span class="position">VP Finance<br>y9pan@ucsd.edu</span><p>I am a fourth year<br>
+                From the far far lands of Sixth<br>
+            Coffee M&Ms</p></li><!--
+            --><li class="bio_container"><img src="assets/swetha.jpg" alt=""><span class="name">Swetha Prabhakaran</span><span class="position">BE Day<br>swprabha@ucsd.edu</span><p>I am a 3rd year BTEC major in Warren College. In my free time, I am a Game of Thrones conspiracy theorist.</p></li><!--
+            --><li class="bio_container"><img src="assets/jessica.jpg" alt=""><span class="name">Jessica Lam</span><span class="position">BE Day<br>jtl005@ucsd.edu</span><p>I'm a 3rd year BTEC major, and you can always count on me to be silly and bubbly. I love trying new food, so hit me up if you are ever down! That or if you like going to the beach and watching the sunset... in a nonromantic way.</p></li><!--
+            --><li class="bio_container"><img src="assets/vikash.jpg" alt=""><span class="name">Vikash Morar</span><span class="position">Lab Expo<br>vmorar@ucsd.edu</span><p> I am a second year Biosystems (maybe biotech?) major at Sixth college. I am deeply in love with pizza and chocolate (not together though) and I run the best committee in BMES. Feel free to ask me any questions about BMES or bioengineering! </p></li><!--
+            --><li class="bio_container"><img src="assets/michelle.jpg" alt=""><span class="name">Michelle Ragsac</span><span class="position">Lab Expo & Publicity/Webmaster<br>mragsac@ucsd.edu</span><p>I'm a second year Bioengineering: Bioinformatics major from Sixth College with a passion for sketching and sleeping! I am currently working in the La Spada Lab at the Sanford Consortium and am researching the Huntington's Disease and Parkinson's Disease. Free free to contact me about BMES, Bioengineering, how to get involved, or anything else that may be on your mind!
+            </p></li><!--
+            --><li class="bio_container"><img src="assets/sumit.jpg" alt=""><span class="name">Sumit Dan</span><span class="position">Project Team<br>sudan@ucsd.edu</span><p>I'm a third year Bioengineering Major at Warren! I love Thai Food, water activities (kayaking, surfing), and spending time with my friends! Feel free to message me with any questions and make a new friend!</p></li><!--
+            --><li class="bio_container"><img src="assets/clarence.jpg" alt=""><span class="name">Clarence Mah</span><span class="position">Project Team<br>ckmah@ucsd.edu</span><p>I am currently a 3rd year undergrad in Sixth college pursuing a degree in Bioengineering: Bioinformatics. I am an avid techie that loves learning about quadcopters, open source software and lifehacks. I also enjoy playing violin with the local orchestra, and occasionally swimming to balance my appetite for food.</p></li><!--
+            --><li class="bio_container"><img src="assets/julia.jpg" alt=""><span class="name">Julia Wong</span><span class="position">Social<br>jww011@ucsd.edu</span><p>I am a fourth year in Bioengineering from Norcal. I like sleeping and reading.</p></li><!--
+            --><li class="bio_container"><img src="assets/courtney.jpg" alt=""><span class="name">Courtney Dreyer</span><span class="position">Social<br>cdreyer@ucsd.edu</span><p>I am a fourth year bioengineering major in erc. I like reading watching Netflix and eating food.</p></li><!--
+            --><li class="bio_container"><img src="assets/annelise.jpg" alt=""><span class="name">Annelise Miller</span><span class="position">Outreach<br>aem006@ucsd.edu</span><p>I am a second year Biosystems major from ERC. I love playing soccer, reading, and listening to all kinds of music, and all my favorite movies were made for kids.</p></li><!--
+            --><li class="bio_container"><img src="assets/anurag.jpg" alt=""><span class="name">Anurag Coramutla</span><span class="position">Outreach & Publicity/Webmaster<br>acoramutla@ucsd.edu</span><p>I am a 2nd Year Bioengineering: BioSystems Major from Warren College researching at AmBre and Sanford Burnham. I like stem cell research, MATLAB (not really), and tissue engineering. I love to play tennis, eat Lindt Chocolate, and eat an <i>excessive</i> amount of Vanilla Froyo with chocolate toppings. Feel free to email me with any questions that you have and I will try my best to answer them.</p></li><!--
+            --><li class="bio_container"><img src="assets/neil.jpg" alt=""><span class="name">Neil Jethani</span><span class="position">R & D<br>njethani@ucsd.edu</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
+            --><li class="bio_container"><img src="assets/logo_icon.jpg" alt=""><span class="name">TBA</span><span class="position">Freshman Rep</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
+            --><li class="bio_container"><img src="assets/logo_icon.jpg" alt=""><span class="name">TBA</span><span class="position">Transfer Rep</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
+            --><div id="bio_back"></div><!--
+        --></ul>
+    </section>
+    <section id="contact" data-index="6">
+        <h1>Contact Us</h1>
+        <div id="contact_list">
+            <a href="mailto:bmes.ucsandiego@gmail.com" class="media_contact"><img src="assets/email.png" alt="email"><p>bmes.ucsandiego@gmail.com</p></a>
+            <a href="http://www.facebook.com/bmes.ucsd/" target="_blank" class="media_contact"><img src="assets/facebook.png" alt="facebook"><p>Facebook</p></a>
+            <a href="http://www.twitter.com/bmesUCSD/" target="_blank" class="media_contact"><img src="assets/twitter.png" alt="twitter"><p>Twitter</p></a>
+            <a href="https://www.youtube.com/user/ucsdbmes" target="_blank" class="media_contact"><img src="assets/youtube.png" alt="facebook"><p>YouTube</p></a>
+        </div>
+    </section>
+</body>
+</HTML>
