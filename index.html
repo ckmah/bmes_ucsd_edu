@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="css/content.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="scripts/animations.js"></script>
-        <script src="scripts/events.js"></script>
         <script src="scripts/home.js"></script>
+        <script src="scripts/events.js"></script>
+        <script src="scripts/applications.js"></script>
         <script src="scripts/officers.js"></script>
         <script src="scripts/contact.js"></script>
         <script src="scripts/myutil.js"></script>
@@ -23,7 +24,7 @@
     </head>
     <body>
         <nav>
-            <ul><li id="tohome">HOME</li><li id="toabout">ABOUT</li><li id="toevents">OPPORTUNITIES</li><li id="tocalendar">CALENDAR</li><li id="toofficers">OFFICERS</li><!--
+            <ul><li id="tohome">HOME</li><li id="toabout">ABOUT</li><li id="toevents">OPPORTUNITIES</li><li id="toapplications">APPLICATIONS</li><li id="tocalendar">CALENDAR</li><li id="toofficers">OFFICERS</li><!--
             --><li id="tocontact">CONTACT</li><!--
         --></ul>
     </nav>
@@ -34,11 +35,10 @@
         --><div class="testimonials" id="test4">Outreach Committee | Thursdays @ 5-6PM</div><!--
         --><div class="testimonials" id="test5">Finance Committee | Wednesdays @ 7:30-8:30PM</div><!--
         --><div class="testimonials" id="test6">Project Team | Wednesdays @ 8-9PM</div><!--
-        --><div class="testimonials" id="test7">BE Day Committee | Wednesdays @ 3-4PM</div><!--
-        --><!--
-        --><li><img href="http://www.facebook.com/bmes.ucsd/" src="assets/fb.png" alt="f"></li><!--
-        --><li><img href="http://www.twitter.com/bmesUCSD/" src="assets/tw.png" alt="t"></li><!--
-        --><li><img href="https://www.youtube.com/user/ucsdbmes" src="assets/yt.png" alt="y"></li><!--
+        --><div class="testimonials" id="test7">BE Day Committee | Wednesdays @ 7-8PM</div><!--
+        --><a href="http://www.facebook.com/bmes.ucsd/" target="_blank"><img src="assets/fb.png" alt="f"></a><!--
+        --><a href="http://www.twitter.com/bmesUCSD/" target="_blank"><img src="assets/tw.png" alt="t"></a><!--
+        --><a href="https://www.youtube.com/user/ucsdbmes" target="_blank"><img src="assets/yt.png" alt="y"></a><!--
     --></ul>
     <div id="bg"></div>
     <div id="hexagons"></div>
@@ -65,7 +65,7 @@
         <div class="event_page" id="page1">
             <div class="back"><div>+</div></div>
             <div class="event_gallery">
-                <img class="gallery_pic" src="assets/beDay1.jpg"></img>
+                <img class="gallery_pic" src="beDay1.jpg"></img>
                 <div class="gallery_left gallery_arrow"></div>
                 <div class="gallery_right gallery_arrow"></div>
                 <div class="gallery_slides">
@@ -130,6 +130,20 @@
             </ul>
         </div>
     </section>
+    <section id="applications" data-index="3">
+        <ul id="groups"><!--
+            --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Membership</p></li><!--
+            --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Project Team</p></li><!--
+            --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Lab Expo</p></li><!--
+            --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Social Events</p></li><!--
+        --></ul>
+        <div id="app_pages">
+            <div class="apage"><div>Thinking of becoming a member? Easy! Fill out the following form and contact Yajur Maker at <a href="mailto:ymaker@ucsd.edu">ymaker@ucsd.edu</a> to finalize your membership. There is a one time $20 fee that covers all events hosted by BMES throughout the year as well as our awesome BMES UCSD T-shirt.<br><br><a href="https://docs.google.com/forms/d/15Vrujb__wXYiiVhicK941G7NmDVrhK3nTrR8fmLAmUw/viewform?c=0&w=1" target="_blank">Membership Form</a></div></div>
+            <div class="apage"><div>    Thank you for your interest in Project Team. We aim to provide a rewarding research experience through our Research Teams Program as well as an opportunity to compete in the BMEidea.<br><br>Applications:<br><a href="https://docs.google.com/forms/d/1MzLzZcaAbJyjCeK96vFo5ZwbM5O7PFrixzMQMmee8so/viewform?usp=send_form" target="_blank">Research Teams Application</a><br><a href="https://docs.google.com/forms/d/1l4IIknupUISUx6qs5hi5Q9zs5fckWM-0BIbOiW7imaA/viewform?usp=send_form" target="_blank">BMEidea/BMEstart</a><br><br><h3>More Information</h3>Check out the BMEidea website for project guidelines as well as more information including past winner designs:<br><a href="http://venturewell.org/students/bmeidea/" target="_blank">BMEidea Competition Website</a><br><br>Dr. Gilja's Lab: <br><a href="http://neuro.eng.ucsd.edu/" target="_blank">Translational NeuroEngineering Lab</a><br><br><a href="https://docs.google.com/presentation/d/16cd_N3b7WrQ7vglHpxtVhJSsk0T_vHoHn559Yayb3jE/pub?start=false&loop=false&delayms=3000">Project Team Info Night Presentation</a></div><div>Project Team Leads<br><br>  Clarence Mah<br><a href="mailto:ckmah@ucsd.edu">ckmah@ucsd.edu</a><br><br>Sumit Dan<br><a href="sudan@ucsd.edu">sudan@ucsd.edu</a></div></div>
+            <div class="apage">More information coming in the future!</div>
+            <div class="apage">More information coming in the future!</div>
+        </div>
+    </section>
     <section id="calendar" data-index="4">
         <iframe id="cal" src="https://www.google.com/calendar/embed?title=Calendar&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23eeeeee&amp;src=g644n23ht1qjhsif7t67kqjcv4%40group.calendar.google.com&amp;color=%235A6986&amp;ctz=America%2FLos_Angeles" style=" border-width:0" frameborder="0" scroll="no"></iframe>
     </section>
@@ -158,7 +172,7 @@
                 For four years I have been here:<br>
             Hobbies now only dreams.</p></li><!--
             --><li class="bio_container"><img src="assets/yajur.jpg" alt=""><span class="name">Yajur Maker</span><span class="position">VP Internal<br>ymaker@ucsd.edu</span><p>Let's get the major stuff out of the way: 2nd year Bioengineering: Biosystems from Warren. Now for the juicy details. I love nature and the beach, improv comedy, and the Lakers (don't kill me). But all in all, I have slowly evolved a love for this campus, and a love for BioE. Come talk to me and we can splurge to world about wireless gizmoz and 21st century bionics cause if we won't, then who will?</p></li><!--
-            --><li class="bio_container"><img src="assets/ben.jpg" alt=""><span class="name">Ben Yang</span><span class="position">VP External<br>benyang@ucsd.edu</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
+            --><li class="bio_container"><img src="assets/ben.jpg" alt=""><span class="name">Ben Yang</span><span class="position">VP External<br>benyang@ucsd.edu</span><p>year 3: Still no signs of social life at UCSD outside of BMES. Will continue to exploit knowledge of "bioengineering professors" to advance our superior race. Human food scarce, but surprisingly tasty. Will report back to home planet in 1 year.</p></li><!--
             --><li class="bio_container"><img src="assets/jenny.jpg" alt=""><span class="name">Jenny Pan</span><span class="position">VP Finance<br>y9pan@ucsd.edu</span><p>I am a fourth year<br>
                 From the far far lands of Sixth<br>
             Coffee M&Ms</p></li><!--
@@ -181,6 +195,7 @@
     </section>
     <section id="contact" data-index="6">
         <h1>Contact Us</h1>
+        <p id="contact_text">Looking for a specific person or committee? Check out the officers page.</p>
         <div id="contact_list">
             <a href="mailto:bmes.ucsandiego@gmail.com" class="media_contact"><img src="assets/email.png" alt="email"><p>bmes.ucsandiego@gmail.com</p></a>
             <a href="http://www.facebook.com/bmes.ucsd/" target="_blank" class="media_contact"><img src="assets/facebook.png" alt="facebook"><p>Facebook</p></a>

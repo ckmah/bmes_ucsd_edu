@@ -61,7 +61,7 @@ h2 {
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.5);
-  z-index: 3;
+  z-index: 10;
   opacity: 0;
   .transition(~"all .3s cubic-bezier(0.165, 0.84, 0.44, 1)");
 }
@@ -108,7 +108,7 @@ nav {
   .nopadmargin;
   top: 0.5em;
   position: fixed;
-  z-index: 10;
+  z-index: 9;
   width: 100vw;
 
   #navslide {
@@ -168,7 +168,8 @@ nav {
   }
 
   @itemdim: 3em;
-  li {
+  a {
+    text-decoration: none;
     width: @itemdim;
     height: @itemdim;
     border-radius: 1000px;

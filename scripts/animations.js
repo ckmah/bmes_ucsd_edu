@@ -6,8 +6,8 @@ var sectionIDs = []; // save reference to section IDs
 var TRANSTIME = 250; // default transition time
 var BUFFERTIME = 10; // spacer transitions
 
-var HEX_STEPVAL = 2; // parallax step value per page for hexagons
-var BG_STEPVAL = 5; // parallax step value per page for bg image
+var HEX_STEPVAL = 1.5; // parallax step value per page for hexagons
+var BG_STEPVAL = 4; // parallax step value per page for bg image
 
 var hexPos = 0; // hexagon parallax scrolling position
 var bgPos = 0; // background parallax scrolling position
@@ -185,17 +185,17 @@ function slideOut($element, direction) {
  * @param  $element Element to perform fadeIn on.
  */
 function slideIn($element, direction) {
-
+  var px = "400px";
   // determine direction based on value of direction
   var dir = '0px, 0px';
   if (direction == 'right')
-    dir = '-400px, 0px';
+    dir = '-' + px + ', 0px';
   else if (direction == 'left')
-    dir = '400px, 0xpx';
+    dir = '' + px + ', 0xpx';
   else if (direction == 'down')
-    dir = '0px, -400px';
+    dir = '0px, -' + px;
   else if (direction == 'up')
-    dir = '0px, 400px';
+    dir = '0px, ' + px;
   else
     dir = '0px, 0px';
 
@@ -235,7 +235,7 @@ function parallax(target) {
 
   /************ middle parallax layer ************/
   hexPos += HEX_STEPVAL * pageDiff;
-console.log(hexPos + 'vw');
+
   $('#hexagons').css({
     "webkitTransform": "translate(" + hexPos + "vw,0px)",
     "MozTransform": "translate(" + hexPos + "vw,0px)",
