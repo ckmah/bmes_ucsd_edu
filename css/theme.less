@@ -83,7 +83,6 @@ h2 {
       position: absolute;
       background-color: @cOverlay;
       border: 1px solid #a8b6c4; // covers img border
-      // border-radius: 3px;
       width: @photow;
       height: @photoh;
       z-index: 5;
@@ -94,7 +93,6 @@ h2 {
 
     img { // basic image format
       position: absolute;
-      // border-radius: 3px;
       width: @photow;
       opacity: 0.9;
       border: 1px solid #c6d1de; // shows on hover
@@ -153,18 +151,34 @@ nav {
   white-space: nowrap;
   z-index: 100;
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   justify-content: center;
 
-  .testimonials {
-    margin: 0 10px;
-    padding: 0.5em 0;
-    width: 400px;
+  #committee_info {
+    position: fixed;
+    font-size: 24px;
+    // text-decoration: underline;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    margin: 10px;
+    padding: 0.2em 0;
+    height: 1.4em;
     display: inline-block;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 5px;
     background-color: rgba(50, 129, 127, 0.4);
-    .transition(~"all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1)");
+    overflow: hidden;
+    .transition(~"all 0.25s 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)");
+
+    .committee {
+      font-size: 14px;
+      text-decoration: none;
+      margin: 0.3em;
+    }
+
+    &:hover { height: 200px; }
   }
 
   @itemdim: 3em;

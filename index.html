@@ -11,14 +11,14 @@
         <script src="scripts/applications.js"></script>
         <script src="scripts/officers.js"></script>
         <script src="scripts/myutil.js"></script>
-<!--         <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!--         <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-55543868-1', 'auto');
-            ga('send', 'pageview');
+        ga('create', 'UA-55543868-1', 'auto');
+        ga('send', 'pageview');
         </script> -->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     </head>
@@ -29,23 +29,37 @@
         --></ul>
     </nav>
     <ul class="social_media"><!--
-        --><div class="testimonials" id="test1">Lab Expo Committee | Mondays @ 7-8PM</div><!--
-        --><div class="testimonials" id="test2">Research and Development | Tuesdays @ 1-2PM</div><!--
-        --><div class="testimonials" id="test3">Social Committee | Wednesdays @ 7-8PM</div><!--
-        --><div class="testimonials" id="test4">Outreach Committee | Thursdays @ 5-6PM</div><!--
-        --><div class="testimonials" id="test5">Finance Committee | Wednesdays @ 7:30-8:30PM</div><!--
-        --><div class="testimonials" id="test6">Project Team | Wednesdays @ 8-9PM</div><!--
-        --><div class="testimonials" id="test7">BE Day Committee | Wednesdays @ 7-8PM</div><!--
-        --><a href="http://www.facebook.com/bmes.ucsd/" target="_blank"><img src="assets/fb.png" alt="f"></a><!--
-        --><a href="http://www.twitter.com/bmesUCSD/" target="_blank"><img src="assets/tw.png" alt="t"></a><!--
-        --><a href="https://www.youtube.com/user/ucsdbmes" target="_blank"><img src="assets/yt.png" alt="y"></a><!--
-    --></ul>
+        --><div id="committee_info">Committee Info<!--
+        --><div class="committee">Lab Expo Committee | Mondays @ 7-8PM</div><!--
+        --><div class="committee">Research and Development | Tuesdays @ 1-2PM</div><!--
+        --><div class="committee">Social Committee | Wednesdays @ 7-8PM</div><!--
+        --><div class="committee">Outreach Committee | Thursdays @ 5-6PM</div><!--
+        --><div class="committee">Finance Committee | Wednesdays @ 7:30-8:30PM</div><!--
+        --><div class="committee">Project Team | Wednesdays @ 8-9PM</div><!--
+        --><div class="committee">BE Day Committee | Wednesdays @ 7-8PM</div><!--
+        --></div>
+        <!-- <a href="http://www.facebook.com/bmes.ucsd/" target="_blank"><img src="assets/fb.png" alt="f"></a>
+        <a href="http://www.twitter.com/bmesUCSD/" target="_blank"><img src="assets/tw.png" alt="t"></a>
+        <a href="https://www.youtube.com/user/ucsdbmes" target="_blank"><img src="assets/yt.png" alt="y"></a> -->
+    </ul>
     <div id="bg"></div>
     <div id="hexagons"></div>
     <div id="cover"></div>
     <section id="home" data-index="0">
         <img src="assets/bmes_logo.png" alt="BMES logo">
-        <div><div id="bmes">Biomedical Engineering Society</div><div id="ucsd">University of California, San Diego</div><div id="twitter_feed"><img src="assets/twitter_white.png" alt="twitter">@bmesUCSD: awesome sauce</div></div>
+        <div>
+            <div id="bmes">Biomedical Engineering Society</div>
+            <div id="ucsd">University of California, San Diego</div>
+            <div id="twitter_feed">
+                <div class="arrow_box"><div id="left_arrow"></div></div>
+                <a href="http://www.twitter.com/bmesUCSD/" target="_blank"><img src="assets/twitter_white.png" alt="twitter"></a>
+                <div id="tweet">
+                    <div id="tweet_text"></div><br>
+                    <div id="tweet_date"></div>
+                </div>
+                <div class="arrow_box"><div id="right_arrow"></div></div>
+            </div>
+        </div>
     </section>
     <section id="about" data-index="1">
         <iframe src="http://www.youtube.com/embed/9v1JmsR5tlM" frameborder="0" allowfullscreen></iframe>
@@ -101,7 +115,7 @@
             </ul>
         </div>
     </section>
-    <section id="project-team">
+    <!-- <section id="project-team">
         <div id="project-team-information">
             <div id="project-team-tabs"
                 <div id="tab1" class="tab">
@@ -129,90 +143,90 @@
                     <p></p>
                 </div>
             </div>
-        <ul id="project-team-navbar">
-            <li>About</li>
-            <li>BMEStart & BMEIdea</li>
-            <li>Current Projects</li>
-            <li>Shadowing Program</li>
-            <li>Applications & Timeline</li>
-            <li>Contact</li>
-        </ul>
-    </section>
-    <section id="applications" data-index="3">
-        <ul id="groups"><!--
-            --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Membership</p></li><!--
-            --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Project Team</p></li><!--
-            --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Lab Expo</p></li><!--
-            --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Social Events</p></li><!--
-        --></ul>
-        <div id="app_pages">
-            <div class="apage"><div>Thinking of becoming a member? Easy! Fill out the following form and contact Yajur Maker at <a href="mailto:ymaker@ucsd.edu">ymaker@ucsd.edu</a> to finalize your membership. There is a one time $20 fee that covers all events hosted by BMES throughout the year as well as our awesome BMES UCSD T-shirt.<br><br><a href="https://docs.google.com/forms/d/15Vrujb__wXYiiVhicK941G7NmDVrhK3nTrR8fmLAmUw/viewform?c=0&w=1" target="_blank">Membership Form</a></div></div>
-            <div class="apage"><div>    Thank you for your interest in Project Team. We aim to provide a rewarding research experience through our Research Teams Program as well as an opportunity to compete in the BMEidea.<br><br>Applications:<br><a href="https://docs.google.com/forms/d/1MzLzZcaAbJyjCeK96vFo5ZwbM5O7PFrixzMQMmee8so/viewform?usp=send_form" target="_blank">Research Teams Application</a><br><a href="https://docs.google.com/forms/d/1l4IIknupUISUx6qs5hi5Q9zs5fckWM-0BIbOiW7imaA/viewform?usp=send_form" target="_blank">BMEidea/BMEstart</a><br><br><h3>More Information</h3>Check out the BMEidea website for project guidelines as well as more information including past winner designs:<br><a href="http://venturewell.org/students/bmeidea/" target="_blank">BMEidea Competition Website</a><br><br>Dr. Gilja's Lab: <br><a href="http://neuro.eng.ucsd.edu/" target="_blank">Translational NeuroEngineering Lab</a><br><br><a href="https://docs.google.com/presentation/d/16cd_N3b7WrQ7vglHpxtVhJSsk0T_vHoHn559Yayb3jE/pub?start=false&loop=false&delayms=3000">Project Team Info Night Presentation</a></div><div>Project Team Leads<br><br>  Clarence Mah<br><a href="mailto:ckmah@ucsd.edu">ckmah@ucsd.edu</a><br><br>Sumit Dan<br><a href="sudan@ucsd.edu">sudan@ucsd.edu</a></div></div>
-            <div class="apage">More information coming in the future!</div>
-            <div class="apage">More information coming in the future!</div>
-        </div>
-    </section>
-    <section id="calendar" data-index="4">
-        <iframe id="cal" src="h
-ttps://www.google.com/calendar/embed?title=Calendar&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;sho
-wCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23eeeeee&amp;src=g644n23ht1qjhsif7t6
-7kqjcv4%40group.calendar.google.com&amp;color=%235A6986&amp;ctz=America%2FLos_Angeles" style=" border-width:0" frameborder="0" scroll="no"></iframe>
-    </section>
-    <section id="officers" data-index="5">
-        <ul id="officer_grid"><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/teryn.jpg" alt="teryn"></div><div class="officer_label"><p class="officer_name">Teryn Johnson<br>President</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/yajur.jpg" alt="yajur"></div><div class="officer_label"><p class="officer_name">Yajur Maker<br>VP Internal</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/ben.jpg" alt="ben"></div><div class="officer_label"><p class="officer_name">Ben Yang<br>VP External</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/jenny.jpg" alt="jenny"></div><div class="officer_label"><p class="officer_name">Jenny Pan<br>VP Finance</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/swetha.jpg" alt="swetha"></div><div class="officer_label"><p class="officer_name">Swetha Prabhakaran<br>BE Day</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/jessica.jpg" alt="jessica"></div><div class="officer_label"><p class="officer_name">Jessica Lam<br>BE Day</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/vikash.jpg" alt="vikash"></div><div class="officer_label"><p class="officer_name">Vikash Morar<br>Lab Expo</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/michelle.jpg" alt="michelle"></div><div class="officer_label"><p class="officer_name">Michelle Ragsac<br>Lab Expo</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/sumit.jpg" alt="sumit"></div><div class="officer_label"><p class="officer_name">Sumit Dan<br>Project Team</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/clarence.jpg" alt="clarence"></div><div class="officer_label"><p class="officer_name">Clarence Mah<br>Project Team</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/julia.jpg" alt="julia"></div><div class="officer_label"><p class="officer_name">Julia Wong<br>Social</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/courtney.jpg" alt="courtney"></div><div class="officer_label"><p class="officer_name">Courtney Dreyer<br>Social</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/annelise.jpg" alt="annelise"></div><div class="officer_label"><p class="officer_name">Annelise Miller<br>Outreach</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/anurag.jpg" alt="anurag"></div><div class="officer_label"><p class="officer_name">Anurag Coramutla<br>Outreach</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/neil.jpg" alt="neil"></div><div class="officer_label"><p class="officer_name">Neil Jethani<br>R & D</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/logo_icon.jpg" alt="freshmanRep"></div><div class="officer_label"><p class="officer_name">TBA<br>Freshman Rep</p><p class="officer_more">more...</p></div></li><!--
-            --><li class="officer"><div class="mugshot"><img src="assets/logo_icon.jpg" alt="transferRep"></div><div class="officer_label"><p class="officer_name">TBA<br>Transfer Rep</p><p class="officer_more">more...</p></div></li><!--
-        --></ul>
-        <ul id="officer_bio"><!--
-            --><li class="bio_container"><img src="assets/teryn.jpg" alt=""><span class="name">Teryn Johnson</span><span class="position">President<br>t8johnso@ucsd.edu</span><p>I am President,<br>
-                For four years I have been here:<br>
-            Hobbies now only dreams.</p></li><!--
-            --><li class="bio_container"><img src="assets/yajur.jpg" alt=""><span class="name">Yajur Maker</span><span class="position">VP Internal<br>ymaker@ucsd.edu</span><p>Let's get the major stuff out of the way: 2nd year Bioengineering: Biosystems from Warren. Now for the juicy details. I love nature and the beach, improv comedy, and the Lakers (don't kill me). But all in all, I have slowly evolved a love for this campus, and a love for BioE. Come talk to me and we can splurge to world about wireless gizmoz and 21st century bionics cause if we won't, then who will?</p></li><!--
-            --><li class="bio_container"><img src="assets/ben.jpg" alt=""><span class="name">Ben Yang</span><span class="position">VP External<br>benyang@ucsd.edu</span><p>year 3: Still no signs of social life at UCSD outside of BMES. Will continue to exploit knowledge of "bioengineering professors" to advance our superior race. Human food scarce, but surprisingly tasty. Will report back to home planet in 1 year.</p></li><!--
-            --><li class="bio_container"><img src="assets/jenny.jpg" alt=""><span class="name">Jenny Pan</span><span class="position">VP Finance<br>y9pan@ucsd.edu</span><p>I am a fourth year<br>
-                From the far far lands of Sixth<br>
-            Coffee M&Ms</p></li><!--
-            --><li class="bio_container"><img src="assets/swetha.jpg" alt=""><span class="name">Swetha Prabhakaran</span><span class="position">BE Day<br>swprabha@ucsd.edu</span><p>I am a 3rd year BTEC major in Warren College. In my free time, I am a Game of Thrones conspiracy theorist.</p></li><!--
-            --><li class="bio_container"><img src="assets/jessica.jpg" alt=""><span class="name">Jessica Lam</span><span class="position">BE Day<br>jtl005@ucsd.edu</span><p>I'm a 3rd year BTEC major, and you can always count on me to be silly and bubbly. I love trying new food, so hit me up if you are ever down! That or if you like going to the beach and watching the sunset... in a nonromantic way.</p></li><!--
-            --><li class="bio_container"><img src="assets/vikash.jpg" alt=""><span class="name">Vikash Morar</span><span class="position">Lab Expo<br>vmorar@ucsd.edu</span><p> I am a second year Biosystems (maybe biotech?) major at Sixth college. I am deeply in love with pizza and chocolate (not together though) and I run the best committee in BMES. Feel free to ask me any questions about BMES or bioengineering! </p></li><!--
-            --><li class="bio_container"><img src="assets/michelle.jpg" alt=""><span class="name">Michelle Ragsac</span><span class="position">Lab Expo & Publicity/Webmaster<br>mragsac@ucsd.edu</span><p>I'm a second year Bioengineering: Bioinformatics major from Sixth College with a passion for sketching and sleeping! I am currently working in the La Spada Lab at the Sanford Consortium and am researching the Huntington's Disease and Parkinson's Disease. Free free to contact me about BMES, Bioengineering, how to get involved, or anything else that may be on your mind!
-            </p></li><!--
-            --><li class="bio_container"><img src="assets/sumit.jpg" alt=""><span class="name">Sumit Dan</span><span class="position">Project Team<br>sudan@ucsd.edu</span><p>I'm a third year Bioengineering Major at Warren! I love Thai Food, water activities (kayaking, surfing), and spending time with my friends! Feel free to message me with any questions and make a new friend!</p></li><!--
-            --><li class="bio_container"><img src="assets/clarence.jpg" alt=""><span class="name">Clarence Mah</span><span class="position">Project Team<br>ckmah@ucsd.edu</span><p>I am currently a 3rd year undergrad in Sixth college pursuing a degree in Bioengineering: Bioinformatics. I am an avid techie that loves learning about quadcopters, open source software and lifehacks. I also enjoy playing violin with the local orchestra, and occasionally swimming to balance my appetite for food.</p></li><!--
-            --><li class="bio_container"><img src="assets/julia.jpg" alt=""><span class="name">Julia Wong</span><span class="position">Social<br>jww011@ucsd.edu</span><p>I am a fourth year in Bioengineering from Norcal. I like sleeping and reading.</p></li><!--
-            --><li class="bio_container"><img src="assets/courtney.jpg" alt=""><span class="name">Courtney Dreyer</span><span class="position">Social<br>cdreyer@ucsd.edu</span><p>I am a fourth year bioengineering major in erc. I like reading watching Netflix and eating food.</p></li><!--
-            --><li class="bio_container"><img src="assets/annelise.jpg" alt=""><span class="name">Annelise Miller</span><span class="position">Outreach<br>aem006@ucsd.edu</span><p>I am a second year Biosystems major from ERC. I love playing soccer, reading, and listening to all kinds of music, and all my favorite movies were made for kids.</p></li><!--
-            --><li class="bio_container"><img src="assets/anurag.jpg" alt=""><span class="name">Anurag Coramutla</span><span class="position">Outreach & Publicity/Webmaster<br>acoramutla@ucsd.edu</span><p>I am a 2nd Year Bioengineering: BioSystems Major from Warren College researching at AmBre and Sanford Burnham. I like stem cell research, MATLAB (not really), and tissue engineering. I love to play tennis, eat Lindt Chocolate, and eat an <i>excessive</i> amount of Vanilla Froyo with chocolate toppings. Feel free to email me with any questions that you have and I will try my best to answer them.</p></li><!--
-            --><li class="bio_container"><img src="assets/neil.jpg" alt=""><span class="name">Neil Jethani</span><span class="position">R & D<br>njethani@ucsd.edu</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
-            --><li class="bio_container"><img src="assets/logo_icon.jpg" alt=""><span class="name">TBA</span><span class="position">Freshman Rep</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
-            --><li class="bio_container"><img src="assets/logo_icon.jpg" alt=""><span class="name">TBA</span><span class="position">Transfer Rep</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
-            --><div id="bio_back"></div><!--
-        --></ul>
-    </section>
-    <section id="contact" data-index="6">
-        <h1>Contact Us</h1>
-        <p id="contact_text">Looking for a specific person or committee? Check out the officers page.</p>
-        <div id="contact_list">
-            <a href="mailto:bmes.ucsandiego@gmail.com" class="media_contact"><img src="assets/email.png" alt="email"><p>bmes.ucsandiego@gmail.com</p></a>
-            <a href="http://www.facebook.com/bmes.ucsd/" target="_blank" class="media_contact"><img src="assets/facebook.png" alt="facebook"><p>Facebook</p></a>
-            <a href="http://www.twitter.com/bmesUCSD/" target="_blank" class="media_contact"><img src="assets/twitter.png" alt="twitter"><p>Twitter</p></a>
-            <a href="https://www.youtube.com/user/ucsdbmes" target="_blank" class="media_contact"><img src="assets/youtube.png" alt="facebook"><p>YouTube</p></a>
-        </div>
-    </section>
-</body>
+            <ul id="project-team-navbar">
+                <li>About</li>
+                <li>BMEStart & BMEIdea</li>
+                <li>Current Projects</li>
+                <li>Shadowing Program</li>
+                <li>Applications & Timeline</li>
+                <li>Contact</li>
+            </ul>
+        </section>-->
+        <section id="applications" data-index="3">
+            <ul id="groups"><!--
+                --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Membership</p></li><!--
+                --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Project Team</p></li><!--
+                --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Lab Expo</p></li><!--
+                --><li class="group"><img src="assets/logo_icon.jpg" alt=""><p>Social Events</p></li><!--
+            --></ul>
+            <div id="app_pages">
+                <div class="apage"><div>Thinking of becoming a member? Easy! Fill out the following form and contact Yajur Maker at <a href="mailto:ymaker@ucsd.edu">ymaker@ucsd.edu</a> to finalize your membership. There is a one time $20 fee that covers all events hosted by BMES throughout the year as well as our awesome BMES UCSD T-shirt.<br><br><a href="https://docs.google.com/forms/d/15Vrujb__wXYiiVhicK941G7NmDVrhK3nTrR8fmLAmUw/viewform?c=0&w=1" target="_blank">Membership Form</a></div></div>
+                <div class="apage"><div>    Thank you for your interest in Project Team. We aim to provide a rewarding research experience through our Research Teams Program as well as an opportunity to compete in the BMEidea.<br><br>Applications:<br><a href="https://docs.google.com/forms/d/1MzLzZcaAbJyjCeK96vFo5ZwbM5O7PFrixzMQMmee8so/viewform?usp=send_form" target="_blank">Research Teams Application</a><br><a href="https://docs.google.com/forms/d/1l4IIknupUISUx6qs5hi5Q9zs5fckWM-0BIbOiW7imaA/viewform?usp=send_form" target="_blank">BMEidea/BMEstart</a><br><br><h3>More Information</h3>Check out the BMEidea website for project guidelines as well as more information including past winner designs:<br><a href="http://venturewell.org/students/bmeidea/" target="_blank">BMEidea Competition Website</a><br><br>Dr. Gilja's Lab: <br><a href="http://neuro.eng.ucsd.edu/" target="_blank">Translational NeuroEngineering Lab</a><br><br><a href="https://docs.google.com/presentation/d/16cd_N3b7WrQ7vglHpxtVhJSsk0T_vHoHn559Yayb3jE/pub?start=false&loop=false&delayms=3000">Project Team Info Night Presentation</a></div><div>Project Team Leads<br><br>  Clarence Mah<br><a href="mailto:ckmah@ucsd.edu">ckmah@ucsd.edu</a><br><br>Sumit Dan<br><a href="sudan@ucsd.edu">sudan@ucsd.edu</a></div></div>
+                <div class="apage">More information coming in the future!</div>
+                <div class="apage">Signups for Knott's Scary Farm: <br><a href="https://docs.google.com/forms/d/1OJt02TlwZBbKrYnSft4gRYo-MEQTnmgw4-jg0BWzCRw/viewform" target="_blank">Knott's Scary Farm Sign-up</a></div>
+            </div>
+        </section>
+        <section id="calendar" data-index="4">
+            <iframe id="cal" src="h
+            ttps://www.google.com/calendar/embed?title=Calendar&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;sho
+            wCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23eeeeee&amp;src=g644n23ht1qjhsif7t6
+            7kqjcv4%40group.calendar.google.com&amp;color=%235A6986&amp;ctz=America%2FLos_Angeles" style=" border-width:0" frameborder="0" scroll="no"></iframe>
+        </section>
+        <section id="officers" data-index="5">
+            <ul id="officer_grid"><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/teryn.jpg" alt="teryn"></div><div class="officer_label"><p class="officer_name">Teryn Johnson<br>President</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/yajur.jpg" alt="yajur"></div><div class="officer_label"><p class="officer_name">Yajur Maker<br>VP Internal</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/ben.jpg" alt="ben"></div><div class="officer_label"><p class="officer_name">Ben Yang<br>VP External</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/jenny.jpg" alt="jenny"></div><div class="officer_label"><p class="officer_name">Jenny Pan<br>VP Finance</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/swetha.jpg" alt="swetha"></div><div class="officer_label"><p class="officer_name">Swetha Prabhakaran<br>BE Day</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/jessica.jpg" alt="jessica"></div><div class="officer_label"><p class="officer_name">Jessica Lam<br>BE Day</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/vikash.jpg" alt="vikash"></div><div class="officer_label"><p class="officer_name">Vikash Morar<br>Lab Expo</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/michelle.jpg" alt="michelle"></div><div class="officer_label"><p class="officer_name">Michelle Ragsac<br>Lab Expo</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/sumit.jpg" alt="sumit"></div><div class="officer_label"><p class="officer_name">Sumit Dan<br>Project Team</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/clarence.jpg" alt="clarence"></div><div class="officer_label"><p class="officer_name">Clarence Mah<br>Project Team</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/julia.jpg" alt="julia"></div><div class="officer_label"><p class="officer_name">Julia Wong<br>Social</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/courtney.jpg" alt="courtney"></div><div class="officer_label"><p class="officer_name">Courtney Dreyer<br>Social</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/annelise.jpg" alt="annelise"></div><div class="officer_label"><p class="officer_name">Annelise Miller<br>Outreach</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/anurag.jpg" alt="anurag"></div><div class="officer_label"><p class="officer_name">Anurag Coramutla<br>Outreach</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/neil.jpg" alt="neil"></div><div class="officer_label"><p class="officer_name">Neil Jethani<br>R & D</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/julia2.jpg" alt="julia"></div><div class="officer_label"><p class="officer_name">Julia Yip<br>Freshman Rep.</p><p class="officer_more">more...</p></div></li><!--
+                --><li class="officer"><div class="mugshot"><img src="assets/logo_icon.jpg" alt="transferRep"></div><div class="officer_label"><p class="officer_name">TBA<br>Transfer Rep</p><p class="officer_more">more...</p></div></li><!--
+            --></ul>
+            <ul id="officer_bio"><!--
+                --><li class="bio_container"><img src="assets/teryn.jpg" alt=""><span class="name">Teryn Johnson</span><span class="position">President<br>t8johnso@ucsd.edu</span><p>I am President,<br>
+                    For four years I have been here:<br>
+                Hobbies now only dreams.</p></li><!--
+                --><li class="bio_container"><img src="assets/yajur.jpg" alt=""><span class="name">Yajur Maker</span><span class="position">VP Internal<br>ymaker@ucsd.edu</span><p>Let's get the major stuff out of the way: 2nd year Bioengineering: Biosystems from Warren. Now for the juicy details. I love nature and the beach, improv comedy, and the Lakers (don't kill me). But all in all, I have slowly evolved a love for this campus, and a love for BioE. Come talk to me and we can splurge to world about wireless gizmoz and 21st century bionics cause if we won't, then who will?</p></li><!--
+                --><li class="bio_container"><img src="assets/ben.jpg" alt=""><span class="name">Ben Yang</span><span class="position">VP External<br>benyang@ucsd.edu</span><p>year 3: Still no signs of social life at UCSD outside of BMES. Will continue to exploit knowledge of "bioengineering professors" to advance our superior race. Human food scarce, but surprisingly tasty. Will report back to home planet in 1 year.</p></li><!--
+                --><li class="bio_container"><img src="assets/jenny.jpg" alt=""><span class="name">Jenny Pan</span><span class="position">VP Finance<br>y9pan@ucsd.edu</span><p>I am a fourth year<br>
+                    From the far far lands of Sixth<br>
+                Coffee M&Ms</p></li><!--
+                --><li class="bio_container"><img src="assets/swetha.jpg" alt=""><span class="name">Swetha Prabhakaran</span><span class="position">BE Day<br>swprabha@ucsd.edu</span><p>I am a 3rd year BTEC major in Warren College. In my free time, I am a Game of Thrones conspiracy theorist.</p></li><!--
+                --><li class="bio_container"><img src="assets/jessica.jpg" alt=""><span class="name">Jessica Lam</span><span class="position">BE Day<br>jtl005@ucsd.edu</span><p>I'm a 3rd year BTEC major, and you can always count on me to be silly and bubbly. I love trying new food, so hit me up if you are ever down! That or if you like going to the beach and watching the sunset... in a nonromantic way.</p></li><!--
+                --><li class="bio_container"><img src="assets/vikash.jpg" alt=""><span class="name">Vikash Morar</span><span class="position">Lab Expo<br>vmorar@ucsd.edu</span><p> I am a second year Biosystems (maybe biotech?) major at Sixth college. I am deeply in love with pizza and chocolate (not together though) and I run the best committee in BMES. Feel free to ask me any questions about BMES or bioengineering! </p></li><!--
+                --><li class="bio_container"><img src="assets/michelle.jpg" alt=""><span class="name">Michelle Ragsac</span><span class="position">Lab Expo & Publicity/Webmaster<br>mragsac@ucsd.edu</span><p>I'm a second year Bioengineering: Bioinformatics major from Sixth College with a passion for sketching and sleeping! I am currently working in the La Spada Lab at the Sanford Consortium and am researching the Huntington's Disease and Parkinson's Disease. Free free to contact me about BMES, Bioengineering, how to get involved, or anything else that may be on your mind!
+                </p></li><!--
+                --><li class="bio_container"><img src="assets/sumit.jpg" alt=""><span class="name">Sumit Dan</span><span class="position">Project Team<br>sudan@ucsd.edu</span><p>I'm a third year Bioengineering Major at Warren! I love Thai Food, water activities (kayaking, surfing), and spending time with my friends! Feel free to message me with any questions and make a new friend!</p></li><!--
+                --><li class="bio_container"><img src="assets/clarence.jpg" alt=""><span class="name">Clarence Mah</span><span class="position">Project Team<br>ckmah@ucsd.edu</span><p>I am currently a 3rd year undergrad in Sixth college pursuing a degree in Bioengineering: Bioinformatics. I am an avid techie that loves learning about quadcopters, open source software and lifehacks. I also enjoy playing violin with the local orchestra, and occasionally swimming to balance my appetite for food.</p></li><!--
+                --><li class="bio_container"><img src="assets/julia.jpg" alt=""><span class="name">Julia Wong</span><span class="position">Social<br>jww011@ucsd.edu</span><p>I am a fourth year in Bioengineering from Norcal. I like sleeping and reading.</p></li><!--
+                --><li class="bio_container"><img src="assets/courtney.jpg" alt=""><span class="name">Courtney Dreyer</span><span class="position">Social<br>cdreyer@ucsd.edu</span><p>I am a fourth year bioengineering major in erc. I like reading watching Netflix and eating food.</p></li><!--
+                --><li class="bio_container"><img src="assets/annelise.jpg" alt=""><span class="name">Annelise Miller</span><span class="position">Outreach<br>aem006@ucsd.edu</span><p>I am a second year Biosystems major from ERC. I love playing soccer, reading, and listening to all kinds of music, and all my favorite movies were made for kids.</p></li><!--
+                --><li class="bio_container"><img src="assets/anurag.jpg" alt=""><span class="name">Anurag Coramutla</span><span class="position">Outreach & Publicity/Webmaster<br>acoramutla@ucsd.edu</span><p>I am a 2nd Year Bioengineering: BioSystems Major from Warren College researching at AmBre and Sanford Burnham. I like stem cell research, MATLAB (not really), and tissue engineering. I love to play tennis, eat Lindt Chocolate, and eat an <i>excessive</i> amount of Vanilla Froyo with chocolate toppings. Feel free to email me with any questions that you have and I will try my best to answer them.</p></li><!--
+                --><li class="bio_container"><img src="assets/neil.jpg" alt=""><span class="name">Neil Jethani</span><span class="position">R & D<br>njethani@ucsd.edu</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
+                --><li class="bio_container"><img src="assets/julia2.jpg" alt=""><span class="name">Julia Yip</span><span class="position">Freshman Representative<br>jlyip@ucsd.edu</span><p>Hello! I am a first year BTEC major at Warren, ecstatic to be a part of the BMES family! My habits include randomly singing—faultily, but with spirit—and laughing at myself endlessly. I welcome any and all stories and conversations, so feel free to contact me about anything!</p></li><!--
+                --><li class="bio_container"><img src="assets/logo_icon.jpg" alt=""><span class="name">TBA</span><span class="position">Transfer Rep</span><p>Meet the family! We are here to provide the resources students need for a great academic as well as social experience. Feel free to contact any one of us for more information about BMES, bioengineering, and how to get involved!</p></li><!--
+                --><div id="bio_back"></div><!--
+            --></ul>
+        </section>
+        <section id="contact" data-index="6">
+            <h1>Contact Us</h1>
+            <p id="contact_text">Looking for a specific person or committee? Check out the officers page.</p>
+            <div id="contact_list">
+                <a href="mailto:bmes.ucsandiego@gmail.com" class="media_contact"><img src="assets/email.png" alt="email"><p>bmes.ucsandiego@gmail.com</p></a>
+                <a href="http://www.facebook.com/bmes.ucsd/" target="_blank" class="media_contact"><img src="assets/facebook.png" alt="facebook"><p>Facebook</p></a>
+                <a href="http://www.twitter.com/bmesUCSD/" target="_blank" class="media_contact"><img src="assets/twitter.png" alt="twitter"><p>Twitter</p></a>
+                <a href="https://www.youtube.com/user/ucsdbmes" target="_blank" class="media_contact"><img src="assets/youtube.png" alt="facebook"><p>YouTube</p></a>
+            </div>
+        </section>
+    </body>
 </HTML>
