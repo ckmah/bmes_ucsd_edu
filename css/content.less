@@ -13,7 +13,7 @@ section {
   min-width: @minw;
   max-height: @maxh;
   min-height: @minh;
-  margin: 5vh auto;
+  margin: 3em auto;
   z-index: 4;
   opacity: 1;
   .transition(~"all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1)");
@@ -354,6 +354,29 @@ section {
     display: -webkit-flex;
     opacity: 1;
     .transition(~"all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1)");
+  }
+}
+
+/******************** PROJECT TEAM ********************/
+
+#projectteam {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+
+  .subsection {
+    min-height: 300px;
+
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      margin: 0 5em;
+    }
+
   }
 }
 
